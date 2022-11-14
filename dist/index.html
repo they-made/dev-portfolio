@@ -1,15 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Check what does it mean -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice</title>
+    <title>DEV.THEYMADE</title>
+    <!-- Check what does it mean rel ="preconnect"-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Hello, World</h1>
+      <div class="brand">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="Logo Dev.TheyMade" />
+        </div>
+        <div>
+          <p>Профессиональная веб-разработка c 2010 года</p>
+        </div>
+      </div>
+      <article>
+        <p class="intro">
+          Привет! Мы профессиональная команда разработчиков. У нас огромный опыт
+          работы в сложных проектах. Мы сотрудничаем с дизайн-студиями из США и
+          Европы и Азии. Если вы это читаете, скорее всего вам нас
+          порекомендовали.
+        </p>
+        <p class="stack">
+          <b>Стэк: </b>Redux, Redux-Saga, Webpack, SCSS, Jest, Typescript,
+          Node.js, Nest.js, Express.js, React, Mobx, Tree.js, Canvas,
+          Microservice architecture, Fat client, 3D, 2D
+        </p>
+      </article>
     </header>
+    <section class="experience">
+      <h2>Our experience and works</h2>
+      <div class="wrapper">
+        <div>
+          <!-- Correct width and height in CSS -->
+          <!-- wrap p tag to div -->
+          <img src="/images/caveat.png" width="604" height="540" alt="Caveat" />
+          <p>Поддержка сайта креативной студии Кавеат</p>
+          <p class="location"><a href="#">hellocaveat.com</a> New York, US</p>
+        </div>
+        <div>
+          <img src="/images/veneer.png" width="604" height="540" alt="Veneer" />
+          <p>Разработка фронтэнда и поддержка Veneer</p>
+          <p class="location"><a href="#">helloveneer.com</a> New York, US</p>
+        </div>
+        <div>
+          <img
+            src="/images/masterdelivery.png"
+            width="604"
+            height="540"
+            alt="Master Delivery"
+          />
+          <p>Фронтэнд, Бэкэнд и поддержка MasterDelivery</p>
+          <p class="location">
+            <a href="#">masterdelivery.ru</a> Moscow, Russia
+          </p>
+        </div>
+        <div>
+          <img
+            src="/images/kinopoisk.png"
+            width="604"
+            height="540"
+            alt="KinoPoisk"
+          />
+          <p>Разработка фронтэнда и поддержка Kinopoisk</p>
+          <p class="location">
+            <a href="#">kinopoisk.ru</a>
+            Moscow, Russia
+          </p>
+        </div>
+        <div>
+          <img
+            src="/images/yandex.png"
+            width="604"
+            height="540"
+            alt="Yandex Teleprogramm"
+          />
+          <p>Фронтэнд, Бэкэнд и поддержка Yandex Teleprogramm</p>
+          <p class="location">
+            <a href="#">tv.yandex.ru</a>
+            Moscow, Russia
+          </p>
+        </div>
+        <div>
+          <img src="/images/youdo.png" width="604" height="540" alt="You Do" />
+          <p>Фронтэнд, Бэкэнд и поддержка YouDo</p>
+          <p class="location">
+            <a href="#">youdo.com</a>
+            Moscow, Russia
+          </p>
+        </div>
+      </div>
+      <!-- rename class from button to smth else -->
+      <div class="button">And much more coming ...</div>
+    </section>
+    <section class="about">
+      <h2>How we work</h2>
+      <p>
+        Обычно, мы получаем заявку на работу, уточняем детали вашей задачи.
+        Потом, мы устраиваем первый совместный звонок, где мы обычно знакомимся,
+        обговариваем основные задачи. Далее даем оценку времеми и срокам.
+        Здорово, что вы смотрите этот сайт, ведь сейчас как правило находим
+        работу по рекомендации знакомых.
+      </p>
+    </section>
+    <section class="contacts">
+      <h2>Drop us a line</h2>
+      <p>Напишите нам о вашей задаче, мы будем рады помочь!</p>
+      <div class="icons">
+        <div>
+          <div class="icons-div">
+            <img src="/images/WhatsApp_logo.png" alt="WhatsApp_logo" />
+          </div>
+          <p>WhatsUp</p>
+        </div>
+        <div>
+          <div class="icons-div">
+            <img src="/images/Telegram_logo.png" alt="Telegram_logo" />
+          </div>
+          <p>Telegram</p>
+        </div>
+        <div>
+          <div class="icons-div">
+            <img src="/images/Mail_icon.png" alt="Mail_icon" />
+          </div>
+          <p>Email</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        &copy 2022 DEV.THEYMADE <br />
+        HELLO@THEYMADE.COM
+      </div>
+      <div>
+        <img src="/images/logo.svg" width="248" height="37" alt="Logo" />
+      </div>
+      <div>FOR JOBS / INTERNSHIPS: MAILBOX@THEYMADE.COM</div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
