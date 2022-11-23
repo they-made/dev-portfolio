@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Check what does it mean -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DEV.THEYMADE</title>
-    <!-- Check what does it mean rel ="preconnect"-->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&family=Inter&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,7 +18,7 @@
     <header>
       <div class="brand">
         <div class="logo">
-          <img src="/images/logo.svg" alt="Logo Dev.TheyMade" />
+          <img src="/images/logo.svg" alt="Companie's Logo" />
         </div>
         <div>
           <p>Профессиональная веб-разработка c 2010 года</p>
@@ -27,6 +26,7 @@
       </div>
       <article>
         <p class="intro">
+          <!-- Ask Aleksey about the font Aleo in googleFonts is different from figma -->
           Привет! Мы профессиональная команда разработчиков. У нас огромный опыт
           работы в сложных проектах. Мы сотрудничаем с дизайн-студиями из США и
           Европы и Азии. Если вы это читаете, скорее всего вам нас
@@ -42,77 +42,124 @@
     <section class="experience">
       <h2>Our experience and works</h2>
       <div class="wrapper">
-        <div>
-          <!-- Correct width and height in CSS -->
-          <!-- wrap p tag to div -->
-          <img src="/images/caveat.png" width="604" height="540" alt="Caveat" />
-          <p>Поддержка сайта креативной студии Кавеат</p>
-          <p class="location"><a href="#">hellocaveat.com</a> New York, US</p>
+        <div class="case-study">
+          <div class="case-study-thumbnail" id="caveat">
+            <img
+              class="case-study-logo"
+              src="/images/Caveat_logo.png"
+              alt="Caveat Logo"
+            />
+            <img src="/images/caveat.png" alt="Caveat" />
+          </div>
+          <div>
+            <p class="description">Поддержка сайта креативной студии Кавеат</p>
+            <p class="location"><a href="#">hellocaveat.com</a> New York, US</p>
+          </div>
         </div>
-        <div>
-          <img src="/images/veneer.png" width="604" height="540" alt="Veneer" />
-          <p>Разработка фронтэнда и поддержка Veneer</p>
-          <p class="location"><a href="#">helloveneer.com</a> New York, US</p>
+        <div class="case-study">
+          <div class="case-study-thumbnail" id="veneer">
+            <img
+              class="case-study-logo"
+              src="/images/Veneer_logo.png"
+              alt="Veneer Logo"
+            />
+            <img src="/images/caveat.png" alt="Veneer" />
+          </div>
+          <div>
+            <p class="description">Разработка фронтэнда и поддержка Veneer</p>
+            <p class="location"><a href="#">helloveneer.com</a> New York, US</p>
+          </div>
         </div>
-        <div>
-          <img
-            src="/images/masterdelivery.png"
-            width="604"
-            height="540"
-            alt="Master Delivery"
-          />
-          <p>Фронтэнд, Бэкэнд и поддержка MasterDelivery</p>
-          <p class="location">
-            <a href="#">masterdelivery.ru</a> Moscow, Russia
-          </p>
+        <div class="case-study">
+          <div class="case-study-thumbnail" id="masterdelivery">
+            <img
+              class="case-study-logo"
+              src="/images/MasterDelivery_Logo.png"
+              alt="Master Delivery Logo"
+            />
+            <img src="/images/caveat.png" alt="Master Delivery" />
+          </div>
+          <div>
+            <p class="description">
+              Фронтэнд, Бэкэнд и поддержка MasterDelivery
+            </p>
+            <p class="location">
+              <a href="#">masterdelivery.ru</a> Moscow, Russia
+            </p>
+          </div>
         </div>
-        <div>
-          <img
-            src="/images/kinopoisk.png"
-            width="604"
-            height="540"
-            alt="KinoPoisk"
-          />
-          <p>Разработка фронтэнда и поддержка Kinopoisk</p>
-          <p class="location">
-            <a href="#">kinopoisk.ru</a>
-            Moscow, Russia
-          </p>
+        <div class="case-study">
+          <div class="case-study-thumbnail" id="kinopoisk">
+            <img
+              class="case-study-logo"
+              src="/images/Kinopoisk_logo.png"
+              alt="KinoPoisk"
+            />
+            <img src="/images/caveat.png" alt="KinoPoisk" />
+          </div>
+          <div>
+            <p class="description">
+              Разработка фронтэнда и поддержка Kinopoisk
+            </p>
+            <p class="location">
+              <a href="#">kinopoisk.ru</a>
+              Moscow, Russia
+            </p>
+          </div>
         </div>
-        <div>
-          <img
-            src="/images/yandex.png"
-            width="604"
-            height="540"
-            alt="Yandex Teleprogramm"
-          />
-          <p>Фронтэнд, Бэкэнд и поддержка Yandex Teleprogramm</p>
-          <p class="location">
-            <a href="#">tv.yandex.ru</a>
-            Moscow, Russia
-          </p>
+        <div class="case-study">
+          <div class="case-study-thumbnail" id="yandex">
+            <img
+              class="case-study-logo"
+              src="/images/YandexTele_logo.png"
+              alt="Yandex Logo"
+            />
+            <img src="/images/caveat.png" alt="Yandex Teleprogramm" />
+          </div>
+          <div>
+            <p class="description">
+              Фронтэнд, Бэкэнд и поддержка Yandex Teleprogramm
+            </p>
+            <p class="location">
+              <a href="#">tv.yandex.ru</a>
+              Moscow, Russia
+            </p>
+          </div>
         </div>
-        <div>
-          <img src="/images/youdo.png" width="604" height="540" alt="You Do" />
-          <p>Фронтэнд, Бэкэнд и поддержка YouDo</p>
-          <p class="location">
-            <a href="#">youdo.com</a>
-            Moscow, Russia
-          </p>
+        <div class="case-study">
+          <div class="case-study-thumbnail" id="youdo">
+            <img
+              class="case-study-logo"
+              src="/images/YouDo_logo.png"
+              alt="YouDo Logo"
+            />
+            <img src="/images/caveat.png" alt="You Do" />
+          </div>
+          <div>
+            <p class="description">Фронтэнд, Бэкэнд и поддержка YouDo</p>
+            <p class="location">
+              <a href="#">youdo.com</a>
+              Moscow, Russia
+            </p>
+          </div>
         </div>
       </div>
-      <!-- rename class from button to smth else -->
-      <div class="button">And much more coming ...</div>
+      <div class="much-more">And much more coming ...</div>
     </section>
     <section class="about">
       <h2>How we work</h2>
-      <p>
-        Обычно, мы получаем заявку на работу, уточняем детали вашей задачи.
-        Потом, мы устраиваем первый совместный звонок, где мы обычно знакомимся,
-        обговариваем основные задачи. Далее даем оценку времеми и срокам.
-        Здорово, что вы смотрите этот сайт, ведь сейчас как правило находим
-        работу по рекомендации знакомых.
-      </p>
+      <div>
+        <p>
+          Обычно, мы получаем заявку на работу, уточняем детали вашей задачи.
+          Потом, мы устраиваем первый совместный звонок, где мы обычно
+          знакомимся, обговариваем основные задачи. Далее даем оценку времеми и
+          срокам.
+        </p>
+        <p>
+          Здорово, что вы смотрите этот сайт, ведь сейчас как правило находим
+          работу по рекомендации знакомых.
+        </p>
+      </div>
     </section>
     <section class="contacts">
       <h2>Drop us a line</h2>
@@ -139,14 +186,15 @@
       </div>
     </section>
     <footer>
-      <div>
-        &copy 2022 DEV.THEYMADE <br />
-        HELLO@THEYMADE.COM
-      </div>
-      <div>
-        <img src="/images/logo.svg" width="248" height="37" alt="Logo" />
-      </div>
-      <div>FOR JOBS / INTERNSHIPS: MAILBOX@THEYMADE.COM</div>
+      <span id="copyright">&copy 2022 DEV.THEYMADE</span>
+      <span id="email">HELLO@THEYMADE.COM</span>
+      <span id="logo_img">
+        <a href="#">
+          <img src="/images/logo.svg" alt="Logo" />
+        </a>
+      </span>
+      <span id="jobs_intern">FOR JOBS / INTERNSHIPS:</span>
+      <span id="email_jobs">MAILBOX@THEYMADE.COM</span>
     </footer>
     <script src="main.js"></script>
   </body>
