@@ -1,11 +1,8 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 body {
   background-color: #f5f5f5;
-  /* width: 100vw; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -140,7 +137,13 @@ h2 {
   background-color: #000;
 }
 #purple:before {
-  background: #6575e1;
+  background: linear-gradient(
+    231.64deg,
+    #e16565 20.47%,
+    #5caac2 105.25%,
+    rgba(225, 101, 101, 0.015625) 105.26%,
+    rgba(225, 101, 101, 0) 105.27%
+  );
 }
 .description {
   font-weight: 700;
@@ -169,47 +172,29 @@ a {
 }
 .about p:last-child {
   margin-top: 2rem;
+  align-self: flex-start;
 }
 .contacts {
-  padding-bottom: 16.8rem;
+  width: 100%;
+  background-color: #f2f1e1;
+}
+.clients_wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  align-items: flex-start;
 }
 .contacts img {
   max-width: 100%;
 }
-.contacts p {
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.6rem;
-  text-align: center;
+.logo_img {
+  filter: invert(100%);
+  font-size: 2rem;
 }
-.icons {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 9.3rem;
+.logo_img p {
+  color: white;
 }
-.icons div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* width: 100%; */
-}
-.icons-div {
-  height: 160px;
-  display: flex;
-  justify-content: center;
-}
-.icons-div img {
-  width: 100%;
-}
-.icons p {
-  color: #3799e0;
-  font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 300;
-}
+
 footer {
   background-color: #efefef;
   width: 100vw;
@@ -310,7 +295,7 @@ footer span {
   }
 }
 /* IPad Mini*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 844px) {
   .logo {
     width: 350px;
   }
@@ -517,3 +502,4 @@ footer span {
     justify-content: center;
   }
 }
+/* fix the footer in media */
