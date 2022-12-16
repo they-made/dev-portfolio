@@ -1,0 +1,20 @@
+header,
+.client_img {
+  padding: 0 8.75rem;
+}
+.caveat_info {
+  max-width: 100%;
+}
+h1 {
+  font-size: 4.3rem;
+  line-height: 5.3rem;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+.stack {
+  background: #f2f1e1;
+  font-weight: 700;
+}
