@@ -400,9 +400,6 @@ footer span {
 }
 /* Mobile */
 @media only screen and (max-width: 480px) {
-  .logo img {
-    max-width: 60vw;
-  }
   .brand {
     margin-top: 4.25rem;
   }
@@ -456,7 +453,7 @@ footer span {
     /* font-weight is not working with the font */
     border: 2px solid #9ccdf0;
     border-radius: 100px;
-    padding: 15px 30px;
+    padding: 1rem 1.7rem;
     margin-bottom: 0;
   }
   .about p {
