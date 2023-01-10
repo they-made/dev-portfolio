@@ -9,7 +9,13 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 9.8vh 25vw;
+  padding: 9.8vh 0;
+}
+header,
+.experience,
+.about,
+.email {
+  padding: 0 25vw;
 }
 
 .logo img {
@@ -178,20 +184,20 @@ a {
   padding-bottom: 5.6rem;
 }
 .clients_wrap {
+  max-width: 55vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: baseline;
   justify-items: center;
-  column-gap: 3rem;
+  column-gap: 8rem;
   row-gap: 2rem;
-  width: 55vw;
-  padding: 0 3.1rem;
+  padding: 0 3.3rem;
 }
 .contacts h2 {
-  margin: 5.25rem 0 3.75rem;
+  margin: 5.25rem 0 3.3rem;
 }
 .contacts img {
-  width: 90%;
+  width: 100%;
 }
 .logo_img p {
   font-size: 1rem;
