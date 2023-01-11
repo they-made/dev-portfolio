@@ -1,7 +1,6 @@
-.support h1,
-.support p,
+.support,
 .process {
-  padding: 0 25vw;
+  max-width: 850px;
 }
 .image {
   padding: 0 20vw;
@@ -23,8 +22,8 @@ p {
 .stack {
   background-color: #f2f1e1;
   border-radius: 7px;
-  margin: 1.8rem 23vw 2.5rem;
-  padding: 1rem 2.4rem;
+  margin: 1.8rem 0 2.5rem;
+  padding: 1rem 0;
 }
 .screen {
   max-width: 100%;
