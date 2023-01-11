@@ -10,13 +10,13 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 9.8vh 0;
-  max-width: 1728px;
 }
 header,
 .experience,
 .about,
 .email {
   padding: 0 25vw;
+  max-width: 100vw;
 }
 
 .logo img {
@@ -167,7 +167,6 @@ a {
   text-decoration: none;
   color: #3799e0;
 }
-
 .much-more {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
@@ -196,9 +195,10 @@ a {
   font-family: "Inter", sans-serif;
   background-color: #f2f1e1;
   padding-bottom: 5.6rem;
+  margin: 0 20vw;
 }
 .clients_wrap {
-  max-width: 55vw;
+  /* max-width: 55vw; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: baseline;
@@ -206,6 +206,7 @@ a {
   column-gap: 4rem;
   row-gap: 2rem;
   padding: 0 3.3rem;
+  /* margin: 0 20vw; */
 }
 .contacts h2 {
   margin: 5.25rem 0 3.3rem;
@@ -238,8 +239,9 @@ footer {
   padding: 4rem 0rem;
 }
 footer img {
-  width: 70%;
-  margin: 0 2.5rem;
+  /* width: 70%; */
+  align-self: center;
+  margin: 0 3rem;
 }
 footer span {
   display: flex;
@@ -268,12 +270,13 @@ footer span {
   cursor: pointer;
 }
 #email {
+  margin-left: 2rem;
   text-decoration: underline;
   justify-content: flex-start;
 }
 
 /* IPad Mini*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   body {
     padding: 6.25rem 0 28rem;
   }
@@ -339,9 +342,6 @@ footer span {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: baseline;
-    gap: 3vh;
-    width: 100vw;
-    overflow: hidden;
   }
   .padding {
     padding: 0;
