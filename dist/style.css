@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 9.8vh 0;
+  max-width: 1728px;
 }
 header,
 .experience,
@@ -78,8 +79,8 @@ h2 {
   height: auto;
 }
 .case-study-logo {
+  width: 100%;
   position: absolute;
-  max-width: 60%;
   z-index: 1;
 }
 .experience,
@@ -104,8 +105,13 @@ h2 {
   height: 100%;
   opacity: 0.9;
 }
+.case-study-thumbnail:hover::before {
+  opacity: 0.5;
+  transition: ease-in-out 1s;
+}
 .case-study-thumbnail img:hover {
   opacity: 0;
+  transition: ease-in-out 1s;
 }
 
 #blue:before {
@@ -148,6 +154,11 @@ h2 {
   font-weight: 700;
   font-size: 1.1rem;
 }
+.description:hover,
+a:hover {
+  color: #d90707;
+  cursor: pointer;
+}
 .location {
   color: #a2a2a2;
   font-weight: 100;
@@ -156,6 +167,7 @@ a {
   text-decoration: none;
   color: #3799e0;
 }
+
 .much-more {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
@@ -166,6 +178,7 @@ a {
   text-align: center;
   padding: 1rem 2rem;
   margin-top: 3rem;
+  font-weight: 600;
 }
 .about h2 {
   margin-top: 7.3rem;
@@ -180,6 +193,7 @@ a {
   align-self: flex-start;
 }
 .contacts {
+  font-family: "Inter", sans-serif;
   background-color: #f2f1e1;
   padding-bottom: 5.6rem;
 }
@@ -189,7 +203,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   align-items: baseline;
   justify-items: center;
-  column-gap: 8rem;
+  column-gap: 4rem;
   row-gap: 2rem;
   padding: 0 3.3rem;
 }
@@ -205,6 +219,7 @@ a {
   /* padding: 1.8rem 0; */
 }
 .email p {
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   padding: 7.8rem 0 2.8rem;
 }
@@ -223,7 +238,8 @@ footer {
   padding: 4rem 0rem;
 }
 footer img {
-  max-width: 100%;
+  width: 70%;
+  margin: 0 2.5rem;
 }
 footer span {
   display: flex;
@@ -245,6 +261,11 @@ footer span {
 #email_jobs {
   justify-content: flex-start;
   text-decoration: underline;
+}
+#email:hover,
+#email_jobs:hover {
+  color: #d90707;
+  cursor: pointer;
 }
 #email {
   text-decoration: underline;
