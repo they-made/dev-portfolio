@@ -15,14 +15,14 @@ header,
 .experience,
 .about,
 .email {
-  max-width: 850px;
+  max-width: 844px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .logo img {
-  max-width: 100%;
+  width: 26.3vw;
 }
 .brand {
   display: flex;
@@ -78,6 +78,7 @@ h2 {
 .case-study-thumbnail img:last-child {
   max-width: 100%;
   height: auto;
+  transition: ease-out 0.5s;
 }
 .case-study-logo {
   width: 100%;
@@ -98,14 +99,15 @@ h2 {
   width: 100%;
   height: 100%;
   opacity: 0.9;
+  transition: ease-out 0.5s;
 }
 .case-study-thumbnail:hover::before {
   opacity: 0.5;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in;
 }
 .case-study-thumbnail img:hover {
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in;
 }
 
 #blue:before {
@@ -188,22 +190,23 @@ a {
 .contacts {
   font-family: "Inter", sans-serif;
   background-color: #f2f1e1;
-  padding-bottom: 5.6rem;
-  margin: 0 23vw;
+  padding: 5.6rem;
+  margin: 0 21vw;
 }
 .clients_wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: baseline;
   justify-content: center;
-  column-gap: 4rem;
+  column-gap: 3.1rem;
   row-gap: 2rem;
-  padding: 0 3.6rem;
 }
 .contacts h2 {
-  margin: 5.25rem 0 3.3rem;
+  margin: 0 0 3.3rem;
 }
-
+.logo_img {
+  max-width: 100%;
+}
 .logo_img p {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -219,16 +222,19 @@ a {
 footer {
   background-color: #efefef;
   width: 100vw;
+}
+.footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 0.9rem;
-  padding: 4rem 0rem;
+  font-size: 0.5rem;
+  padding: 4rem 20vw;
 }
 footer img {
+  width: 10.5vw;
   align-self: center;
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 footer span {
   display: flex;
@@ -238,7 +244,6 @@ footer span {
 }
 #copyright {
   justify-content: flex-end;
-  padding-right: 10px;
 }
 #jobs_intern {
   justify-content: flex-end;
@@ -257,22 +262,25 @@ footer span {
   cursor: pointer;
 }
 #email {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   text-decoration: underline;
   justify-content: flex-start;
 }
 
 /* IPad Mini*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 994px) {
   body {
     padding: 6.25rem 0 28rem;
   }
   header,
   .experience,
   .about,
-  .support,
-  .process {
+  /* .support,
+  .process  */ {
     padding: 0 4.6rem 0;
+  }
+  .logo img {
+    width: 47vw;
   }
   .brand p {
     margin: 25px 0 65px;
@@ -312,21 +320,30 @@ footer span {
   }
   .about p,
   .contacts p {
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: 0.9rem;
+    line-height: 1.65rem;
   }
   .contacts {
     width: 90vw;
-    padding-bottom: 6.25rem;
+    padding: 3.1rem;
+    margin: 0 3vw;
   }
   .clients_wrap {
+    /* width: 80vw; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: baseline;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap: 2rem;
+    column-gap: 2rem; */
+    gap: 2.2rem;
+  }
+  .contacts img {
+    width: 22vw;
+  }
+  .logo_img {
+    width: 23vw;
   }
   .email img {
-    width: 51vw;
+    width: 62vw;
     margin: 0 0 5.9rem;
   }
   .email p {
@@ -335,16 +352,20 @@ footer span {
     padding-top: 5rem;
   }
 
-  footer img {
-    width: 100%;
-    margin: 0;
-  }
   footer {
     font-size: 0.4rem;
     padding: 2.1rem;
   }
+  .footer {
+    padding: 2.1rem 10vw;
+    gap: 0.5rem;
+  }
+  footer img {
+    width: 19vw;
+  }
   #email {
     justify-content: flex-start;
+    margin: 0;
   }
 }
 /* Mobile */
@@ -358,7 +379,7 @@ footer span {
     padding: 0 2.2rem;
   }
   .logo img {
-    width: 100%;
+    width: 63vw;
   }
   .brand p {
     padding: 1rem 0 3.5rem;
@@ -412,28 +433,31 @@ footer span {
     margin: 2.5rem 0 4rem;
   }
   .contacts {
-    padding: 0 0 52px;
+    width: 100vw;
+    padding: 2.8rem;
     margin: 0;
     font-size: 0.6rem;
   }
   .contacts img {
-    max-width: 100%;
+    width: 45vw;
   }
   .clients_wrap {
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   .email p {
     font-size: 1rem;
     text-align: center;
-    padding: 3.75rem 0 1.5rem;
+    padding: 3rem 0 1.5rem;
     margin-bottom: 0;
   }
   .email img {
-    max-width: 100%;
-    padding-bottom: 6rem;
+    width: 81vw;
+    padding-bottom: 3rem;
     margin-bottom: 0;
   }
-  footer {
+  .footer {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -441,23 +465,27 @@ footer span {
     justify-content: center;
     font-size: 0.8rem;
     line-height: 1.1rem;
+    padding: 0;
+  }
+  footer img {
+    width: 33vw;
   }
 
   #copyright {
     order: 5;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     align-self: center;
   }
   #email {
     order: 1;
-    padding-top: 50px;
-    padding-bottom: 25px;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
     align-self: center;
     margin: 0;
   }
   #logo_img {
     order: 4;
-    padding-bottom: 15px;
+    padding-bottom: 0.9rem;
     align-self: center;
   }
   #jobs_intern {

@@ -1,6 +1,7 @@
 .support,
-.process {
-  max-width: 850px;
+.process,
+h1 {
+  width: 49vw;
 }
 .image {
   padding: 0 20vw;
@@ -9,6 +10,9 @@ h1 {
   font-family: "Aleo", serif;
   font-size: 2.6rem;
   line-height: 3.4rem;
+  display: flex;
+  align-self: center;
+  /* padding-left: 27.5rem; */
 }
 h2 {
   margin-top: 2.5rem;
@@ -17,25 +21,36 @@ p {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
-  margin-bottom: 2.5rem;
 }
 .stack {
+  width: 52.3vw;
   background-color: #f2f1e1;
   border-radius: 7px;
   margin: 1.8rem 0 2.5rem;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+}
+.support p:last-child {
+  padding-top: 2.8rem;
 }
 .screen {
   max-width: 100%;
+  padding-top: 1.2rem;
+}
+.process p:last-child {
+  padding-top: 2.1rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 994px) {
+  .support,
+  .process,
   h1 {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    width: 86vw;
+    padding: 0;
   }
-}
-@media only screen and (max-width: 844px) {
+  .stack {
+    width: 89vw;
+    padding: 0.5rem 1rem;
+  }
   h1 {
     font-size: 2.1rem;
     line-height: 2.8rem;
@@ -43,6 +58,28 @@ p {
   p {
     font-size: 0.9rem;
     line-height: 1.5rem;
-    margin-bottom: 2.1rem;
+  }
+  .image {
+    padding: 0 4.6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .support,
+  .process,
+  h1 {
+    width: 91vw;
+    /* padding: 0; */
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .stack {
+    width: 97vw;
+    /* padding: 0.5rem 1rem; */
+  }
+  .image {
+    padding: 0 0.5rem;
   }
 }
