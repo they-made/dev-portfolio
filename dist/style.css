@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 body {
   background-color: #f5f5f5;
@@ -12,6 +10,7 @@ body {
   padding: 9.8vh 0;
 }
 header,
+.brand,
 .experience,
 .about,
 .email {
@@ -24,17 +23,13 @@ header,
 .logo img {
   width: 26.3vw;
 }
-.brand {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .brand p {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: #3799e0;
   margin: 1rem 0 6.25rem;
+  text-align: center;
 }
 .intro {
   font-family: "Aleo", serif;
@@ -109,11 +104,9 @@ h2 {
   opacity: 0;
   transition: all 0.5s ease-in;
 }
-
 #blue:before {
   background-color: #4a5d9f;
 }
-
 #pink:before {
   background-color: #d975c2;
 }
@@ -222,49 +215,45 @@ a {
 footer {
   background-color: #efefef;
   width: 100vw;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 0.5rem;
-  padding: 4rem 20vw;
+  font-size: 0.9rem;
 }
 footer img {
-  width: 10.5vw;
-  align-self: center;
-  /* margin: 0 3rem; */
-}
-footer span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
+  width: 12vw;
 }
 #copyright {
-  justify-content: flex-end;
+  justify-self: flex-end;
 }
 #jobs_intern {
-  justify-content: flex-end;
+  justify-self: flex-end;
 }
 #logo_img {
   justify-self: center;
-  width: 15vw;
 }
 #email_jobs {
-  justify-content: flex-start;
-  text-decoration: underline;
+  justify-self: flex-start;
+}
+#email {
+  justify-self: flex-start;
+}
+#email:link,
+#email_jobs:link {
+  color: black;
 }
 #email:hover,
 #email_jobs:hover {
   color: #d90707;
   cursor: pointer;
-}
-#email {
-  margin-left: 1.5rem;
-  text-decoration: underline;
-  justify-content: flex-start;
 }
 
 /* IPad Mini*/
@@ -274,16 +263,14 @@ footer span {
   }
   header,
   .experience,
-  .about,
-  /* .support,
-  .process  */ {
+  .about {
     padding: 0 4.6rem 0;
   }
-  .logo img {
+  .brand img {
     width: 47vw;
   }
   .brand p {
-    margin: 25px 0 65px;
+    margin: 1.5rem 0 4rem;
   }
   .intro {
     font-size: 1.5rem;
@@ -329,11 +316,8 @@ footer span {
     margin: 0 3vw;
   }
   .clients_wrap {
-    /* width: 80vw; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* row-gap: 2rem;
-    column-gap: 2rem; */
     gap: 2.2rem;
   }
   .contacts img {
@@ -352,24 +336,18 @@ footer span {
     padding-top: 5rem;
   }
 
-  footer {
-    font-size: 0.4rem;
-    padding: 2.1rem;
-  }
   .footer {
-    padding: 2.1rem 10vw;
-    gap: 0.5rem;
+    font-size: 0.5rem;
   }
   footer img {
-    width: 19vw;
+    width: 18vw;
   }
   #email {
     justify-content: flex-start;
-    margin: 0;
   }
 }
 /* Mobile */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   header,
   .experience,
   .about,
@@ -378,7 +356,7 @@ footer span {
   .email {
     padding: 0 2.2rem;
   }
-  .logo img {
+  .brand img {
     width: 63vw;
   }
   .brand p {
@@ -457,8 +435,10 @@ footer span {
     padding-bottom: 3rem;
     margin-bottom: 0;
   }
-  .footer {
+  footer {
     height: auto;
+  }
+  .footer {
     display: flex;
     flex-direction: column;
     text-align: center;
