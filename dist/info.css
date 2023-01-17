@@ -12,10 +12,10 @@
   justify-content: center;
   align-items: center;
 }
-.stack_1 {
-  max-width: 900pxpx;
+.stack_box {
   background-color: #f2f1e1;
   border-radius: 7px;
+  max-width: 900px;
   padding: 1rem 2rem;
 }
 h1 {
@@ -72,7 +72,7 @@ p {
     font-size: 0.9rem;
     line-height: 1.5rem;
   }
-  .stack_1 {
+  .stack_box {
     margin: 0;
     padding: 0;
   }
@@ -82,7 +82,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .support,
   .process,
   .stack_info,
