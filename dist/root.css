@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   background-color: #f5f5f5;
@@ -7,7 +8,8 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 9.8vh 0;
+  padding: 9.8vh 0 0;
+  overflow: hidden;
 }
 header,
 .brand,
@@ -28,7 +30,7 @@ header,
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: #3799e0;
-  margin: 1rem 0 6.25rem;
+  margin: 1rem 0 5rem;
   text-align: center;
 }
 .intro {
@@ -36,13 +38,14 @@ header,
   font-size: 1.8rem;
   font-style: italic;
   line-height: 3rem;
-  margin-bottom: 3.7rem;
+  margin: 0 0 2.5rem;
 }
 .stack {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
+  margin: 0;
 }
 h2 {
   display: flex;
@@ -51,8 +54,8 @@ h2 {
   font-family: "Aleo", serif;
   font-weight: 700;
   font-size: 2.6rem;
-  margin-top: 6.8rem;
-  margin-bottom: 2.8rem;
+  margin-top: 6.2rem;
+  margin-bottom: 2.5rem;
 }
 .contacts h2 {
   margin-top: 8.7rem;
@@ -173,17 +176,19 @@ a {
 }
 .about p {
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.6rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  align-self: flex-start;
+  margin-bottom: 2rem;
 }
 .about p:last-child {
-  margin: 2rem 0rem 9rem;
+  margin: 0 0 5.6rem;
   align-self: flex-start;
 }
 .contacts {
   font-family: "Inter", sans-serif;
   background-color: #f2f1e1;
-  padding: 5.6rem;
+  padding: 5rem;
   margin: 0 21vw;
 }
 .clients_wrap {
@@ -195,7 +200,7 @@ a {
   row-gap: 2rem;
 }
 .contacts h2 {
-  margin: 0 0 3.3rem;
+  margin: 0 0 2.8rem;
 }
 .logo_img {
   max-width: 100%;
@@ -242,9 +247,11 @@ footer img {
 }
 #email_jobs {
   justify-self: flex-start;
+  text-decoration: underline;
 }
 #email {
   justify-self: flex-start;
+  text-decoration: underline;
 }
 #email:link,
 #email_jobs:link {
@@ -259,7 +266,7 @@ footer img {
 /* IPad Mini*/
 @media only screen and (max-width: 994px) {
   body {
-    padding: 6.25rem 0 28rem;
+    padding: 6.25rem 0 0;
   }
   header,
   .experience,
