@@ -9,7 +9,9 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 9.8vh 0 0;
-  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 header,
 .brand,
@@ -66,7 +68,8 @@ h2 {
 }
 .case-study-thumbnail {
   max-width: 100%;
-  overflow: hidden;
+  height: auto;
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
