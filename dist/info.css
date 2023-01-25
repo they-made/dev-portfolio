@@ -3,21 +3,20 @@
   max-width: 844px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 .stack_info {
-  max-width: 844px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.stack_box {
   background-color: #f2f1e1;
-  border-radius: 7px;
-  max-width: 900px;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
+  border-radius: 15px;
+  width: 900px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
+
 h1 {
   display: flex;
   justify-content: center;
@@ -25,6 +24,7 @@ h1 {
   font-family: "Aleo", serif;
   font-size: 2.6rem;
   line-height: 3.4rem;
+  padding-bottom: 1rem;
 }
 h2 {
   margin-top: 2.5rem;
@@ -56,25 +56,26 @@ p {
 }
 
 @media only screen and (max-width: 994px) {
-  .support,
   .process,
-  .stack_info,
   h1 {
-    padding: 0 4.6rem 0;
+    padding: 0 4.6rem;
   }
+  .text {
+    padding: 0 4.6rem;
+  }
+  .stack_info {
+    width: auto;
+    margin: 0 3rem;
+  }
+
   h1 {
     font-size: 2.1rem;
     line-height: 2.8rem;
-    margin: 0;
     padding-bottom: 1rem;
   }
   p {
     font-size: 0.9rem;
     line-height: 1.5rem;
-  }
-  .stack_box {
-    margin: 0;
-    padding: 0;
   }
 
   .screen img {
@@ -83,22 +84,28 @@ p {
 }
 
 @media only screen and (max-width: 580px) {
-  .support,
   .process,
-  .stack_info,
   h1 {
-    padding: 0 2.1rem 0;
+    padding: 0 2.1rem;
+  }
+  .text {
+    padding: 0;
+  }
+  .stack_info {
+    margin: -1rem;
+    padding: 1rem;
   }
   h1 {
     font-size: 1.6rem;
     line-height: 2.2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
-  p {
-    font-size: 0.9rem;
+  p,
+  .stack_info {
+    font-size: 1rem;
     line-height: 1.5rem;
   }
   .screen img {
-    padding: 0 6vw;
+    padding: 0 2.5vw;
   }
 }

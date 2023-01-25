@@ -9,10 +9,9 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 9.8vh 0 0;
+  overflow-x: hidden !important;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
+
 header,
 .brand,
 .experience,
@@ -67,38 +66,43 @@ h2 {
   margin: 0.5rem 0;
 }
 .case-study-thumbnail {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   /* overflow: hidden; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   position: relative;
   cursor: pointer;
 }
 .case-study-thumbnail img:last-child {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   transition: ease-out 0.5s;
 }
 .case-study-logo {
   width: 100%;
+  height: auto;
   position: absolute;
   z-index: 1;
 }
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
   gap: 2.5rem;
   font-family: "Aleo", serif;
   font-size: 1.1rem;
 }
+
 .case-study-thumbnail:before {
   content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
+  /* object-fit: cover;
+  align-items: stretch; */
   opacity: 0.9;
   transition: ease-out 0.5s;
 }
@@ -421,28 +425,35 @@ footer img {
     margin: 2.5rem 0 4rem;
   }
   .contacts {
-    width: 100vw;
-    padding: 2.8rem;
+    width: 100%;
+    height: auto;
+    padding: 2.2rem;
     margin: 0;
-    font-size: 0.6rem;
   }
   .contacts img {
-    width: 45vw;
+    width: 100%;
+  }
+  .logo_img {
+    width: 100%;
+    font-size: 0.6rem;
   }
   .clients_wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* justify-content: stretch; */
     gap: 1rem;
   }
+
   .email p {
     font-size: 1rem;
+    line-height: 1.5rem;
     text-align: center;
     padding: 3rem 0 1.5rem;
     margin-bottom: 0;
   }
   .email img {
     width: 81vw;
-    padding-bottom: 3rem;
+    padding-bottom: 6.5rem;
     margin-bottom: 0;
   }
   footer {
@@ -486,5 +497,20 @@ footer img {
     order: 3;
     padding-bottom: 3.75rem;
     justify-content: center;
+  }
+  @media (hover: hover) {
+    .case-study-thumbnail:hover::before {
+      opacity: 0.9;
+    }
+    .case-study-thumbnail img:hover {
+      opacity: 1;
+      transition: none;
+    }
+    .description:hover {
+      color: inherit;
+    }
+    a:hover {
+      color: #3799e0;
+    }
   }
 }
