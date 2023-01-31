@@ -204,7 +204,6 @@ a {
 .clients_wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: baseline;
   justify-content: center;
   column-gap: 3.1rem;
   row-gap: 2rem;
