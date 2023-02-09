@@ -10,11 +10,15 @@ module.exports = {
       rewrites: [{ from: /info\/?.*/, to: "/info.html" }],
     },
   },
-  entry: "./index.js",
+  entry: { index: "./index.js", info: "./info.js", },
   output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
+    // path: path + "/dist",
+    path: path.resolve(__dirname, "dist",),
   },
+  // resolve: {
+  //   extensions: [".js", ".jsx", ".ts", ".tsx"],
+  // },
 
   // devServer: {
   //   allowedHosts: [

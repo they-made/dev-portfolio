@@ -1,3 +1,14 @@
+#project-content {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 9.8vh 0 0; */
+  /* overflow-x: hidden !important; */
+  max-width: 900px;
+}
+
 .support,
 .process {
   max-width: 844px;

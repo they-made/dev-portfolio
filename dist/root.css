@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
 }
-body {
+body{
   background-color: #fff;
   display: flex;
   align-items: center;
