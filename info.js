@@ -47,6 +47,7 @@ function createProjectHTML(project) {
     <p class="text">${project.description[0]}</p>
 
     <p class="text">${project.description[1]}</p>
+    <p class="text">${project.description[2]}</p>
 </section>
 <section class="screen">
   <img class="screen" src="${project.images.large}" alt="${project.name}"/>
@@ -55,6 +56,7 @@ function createProjectHTML(project) {
   <h2>${project.processHeader}</h2>
   <p>${project.processDescription[0]}</p>
   <p>${project.processDescription[1]}</p>
+  <p>${project.processDescription[2]}</p>
 </section>
   
       `;
