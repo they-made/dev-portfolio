@@ -1,11 +1,5 @@
-// window.addEventListener("DOMContentLoaded", (event) => {
-//   console.log("Hello World");
-// });
-// import data from ./data.js
+
 import { projects, list } from "./data";
-
-// import { projects, list } from "./data";
-
 window.addEventListener("DOMContentLoaded", () => init(projects, list));
 
 function init(projects, list) {
