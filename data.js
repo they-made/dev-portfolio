@@ -11,14 +11,14 @@ export const projects = {
       "Front-End, Back-End and support for the website of the creative studio Caveat",
     url: "hellocaveat.com",
     address: "New York, US",
-    header: "Website maintenance of creative studio Caveat",
+    header: "Support of the website of the creative studio Caveat.",
     stack:
       "KeystoneJS, MongoDB, React, Typescript, GraphQL, Webpack, SCSS",
     description:
-      ["Caveat is a creative agency based in New York. The agency is engaged in creative, copywriting, web , graphic and industrial designs. Caveat is growing and developing rapidly and the website needed to be supported and updated.",
-      "We were hired to give advice on optimizing the website infrastructure(architecture, Front-End, Back-End, deploy)"],
-    processDescription: ["По просьбе Кавеат мы подготовили подробный план и список необходимых доработок на стороне CMS и клиенте, включающий “минимум” — который закрывает базовые потребности, и “максимум” — отражающий все требования заказчика.", 
-    "В результате, мы структурировали и доработали CMS: добавили новые разделы, завели новые сущности, произвели миграцию старых полей в новые. На клиенте сверстали новые страницы в соответствии с макетами. Настроили процесс деплоя в связках github → heroku и github → netlify."]
+      ["Caveat is a creative design studio from New York. They specialize in creative design, copywriting, web design, graphic design, and industrial design. The Caveat studio is rapidly growing and the website needed to be updated.",
+      "We were asked to extend the functionality of managing website content through the admin panel (CMS), as well as to design new pages for the projects."],
+    processDescription: ["At the request of Caveat, we have prepared a detailed plan and a list of necessary improvements on the CMS and client side, which includes the minimum that covers the basic needs, and the maximum that reflects all of the client's requirements.", 
+    "As a result, we structured and improved the CMS: added new sections, created new entities, and migrated old fields to new ones. On the client side, we created new pages according to the designs. We also set up the deployment process with the GitHub → Heroku and GitHub → Netlify integration."]
     
   },
   veneer: {
@@ -33,36 +33,36 @@ export const projects = {
       "Front-End development and support of the project management system Veneer",
     url: "helloveneer.com",
     address: "New York, US",
-    header: "Website maintenance of creative studio Veneer",
+    header: "Development of the frontend and maintenance of the Veneer platform.",
     stack:
       "Redux, Redux-Saga, Webpack, SCSS, Jest, React, Mobx, Fat client",
     description:
-      ["Veneer — это онлайн сервис который помогает работникам креативной индустрии вести проекты: отслеживать прогресс, вовремя вносить правки. Цель проекта — сокращение потерь при производстве креатива.",
-       "Мы подключились к проекту на стадии, когда у заказчика уже был готов дизайн 80% макетов."],
-    processDescription: ["Мы организовали прозрачный процесс доставки новых версий приложения до конечных пользователей. Разработали фронтенд-части с учетом потребностей заказчика. Выстроили прозрачные отношения между фронтенд и бекенд-разработчиками, что позволило ускорить разработку новых фичей.", 
-    "Наша экспертность помогла реализовать все задумки дизайнера и проектировщика интерфейса точно в  оговоренный срок а также решить многие потенциальные проблемы еще до их появления а также сделать работу в сервисе для пользователей максимально комфортной."]
+      ["Veneer is an online service that helps creative industry professionals manage their projects, track progress, and make timely revisions. The goal of the project is to reduce losses in the production of creative works.",
+       "When we became involved in the project, the client had already finished 80% of the design layouts. Our goal was to integrate seamlessly into the project and work closely with the client and the team to ensure the project was completed successfully."],
+    processDescription: ["We organized a transparent process for delivering new versions of the application to users. Developed front-end parts with the client's needs in mind. We established transparent relationships between front-end and back-end developers, which allowed us to speed up the development of new features.", 
+    "Our expertise helped to implement all the ideas of the designer and interface architect precisely within the agreed deadline and also to solve many potential problems before they arise. We also made the user experience in the service as comfortable as possible."]
   },
-  masterdelivery: {
+  master_delivery: {
     name: "MasterDelivery",
     images: {
       large: "/images/4_MasterDelivery.png",
     },
     logo: "/images/Master_deliver_white.svg",
-    href: "/info/masterdelivery",
+    href: "/info/master-delivery",
     color: "orange",
     title:
       "Front-End, Back-End development and support for the website MasterDelivery",
     url: "masterdelivery.ru",
     address: "Moscow, Russia",
-    header: "Website maintenance of Master Delivery",
+    header: "Development and maintenance of Master Delivery courier delivery service.",
     stack:
       "React, Redux, Redux-Saga, Webpack, SCSS, Jest, Typescript, Mobx, Fat client",
     description:
-      ["Master Delivery — это международный и набирающий обороты сервис БиТуСи доставки (курьерский сервис). MD предоставляет продавцам услуги аутсорсинга доставки: от цифровой системы управления онлайн-заказами до их доставки получателям.",
-       "Основной продукт компании – логистическая франшиза для доставки на последней миле, в основе которой собственная AI-платформа обработки, планирования, прогнозирования и маршрутизации заказов.", 
-       "От года к году сервис развивается с просто запредельной скоростью. Компания имеет широкую техническую инфраструктуру, которая включает в себя мобильные приложения для всех популярных устройств. Мобильные приложения используются курьерами."],
-    processDescription: ["Мы организовали понятный и прозрачный процесс доставки новых версий приложения до конечных пользователей. Разработали фронтенд-части с учетом потребностей заказчика.", 
-    "Реорганизовали команды разработки — из разделённых команд фронтенда, бекенда и отдела качества организовали три кросс-функциональные, разделенных по доменам команды. Все это позволило существенно ускорить разработку, но и сделать её более прозрачной не только для всех участников, но и стейкхолдеров."]
+      ["Master Delivery is an international courier service powered by BiTuSi. Master Delivery provides outsourcing delivery services to sellers, including a digital system for online order management and their delivery to recipients.",
+       "The company's main product is a logistics franchise for last-mile delivery, based on its own AI platform for processing, planning, forecasting, and routing orders.", 
+       "From year to year, the service is developing at an incredible pace. The company has a broad technical infrastructure that includes mobile applications for all popular devices. These mobile applications are used by the couriers."],
+    processDescription: ["We have organized a clear and transparent process of delivering new versions of the application to users. We have developed frontend components taking into account the customer's needs.", 
+    "We reorganized the development teams - from separate front-end, back-end, and quality assurance teams, we created three cross-functional teams divided by domains. All of this significantly accelerated development and made it more transparent not only for all participants, but also for stakeholders."]
   },
   kinopoisk: {
     name: "Kinopoisk",
@@ -75,38 +75,38 @@ export const projects = {
     title: "Front-End development and support for the website Kinopoisk",
     url: "kinopoisk.ru",
     address: "Moscow, Russia",
-    header: "Website maintenance of Kinopoisk",
+    header: "Support of Kinopoisk, a platform about movies and TV shows",
     stack:
       "React, Redux, Webpack, SCSS, Jest, Typescript, Node.js, Express.js, Fat client",
     description:
-      ["Kinopoisk это крупнейший в восточной Европе сервис, включающий в себя функционал онлайн-кинотеатра (как в Netflix), и огромной живой базы знаний о кино (как IMDB). ", 
-      "С помощью Kinopoisk можно смотреть фильмы и сериалы, купить билеты в кино, узнать рейтинги популярных видео и интересные факты, поставить фильмам оценки, написать рецензии и дополнить описание фильмов. Сервис работает по модели подписки пользователей.", 
-      "На сегодняшний день, Кинопоиск это самый масштабный и технически сложный проект, в котором работали наши разработчики."],
-    processDescription: ["Наша команда участвовала в разработке с нуля фронтенд-части и бекенд части сервиса, используя в качестве источника данных ранее купленную сервисом базу о кино.", 
-    "Было разработано более 40 виждетов для интеграции в разного рода платформы: для сторонних сайтов, и приложений для телевизора. ", 
-    "Кроме этого было разработано собственное приложение для телевизоров Kinopoisk."]
+      ["Kinopoisk is the largest service in Eastern Europe that includes an online cinema functionality, similar to Netflix, as well as an extensive live knowledge base about movies, similar to IMDB.", 
+      "Users can use Kinopoisk to watch movies and TV shows, purchase cinema tickets, discover popular video ratings and interesting facts, rate and review movies, and update movie descriptions. The service operates on a subscription-based model for users.", 
+      "Our developers have honed their skills on a variety of projects, but Kinopoisk is the most complex and ambitious one yet."],
+    processDescription: ["Our team participated in developing the frontend and backend parts of the Kinopoisk service from scratch, using the movie database previously purchased by the service as a data source.", 
+    "Over 40 widgets were developed to integrate into various platforms, including third-party websites and TV applications.", 
+    "Our team also created a custom TV application named Kinopoisk, which was specifically designed to improve user experience and simplify access to our vast collection of movies."]
   },
-  yandextv: {
+  yandex_tv: {
     name: "YandexTV",
     images: {
       large: "/images/2_YandexTV.png",
     },
     logo: "/images/YandexTV_white.svg",
-    href: "/info/yandextv",
+    href: "/info/yandex-tv",
     color: "black",
     title:
       "Front-End, Back-End development and support for the website Yandex TV",
     url: "tv.yandex.ru",
     address: "Moscow, Russia",
-    header: "Website maintenance of YandexTV",
+    header: "Development and Support for the YandexTV website.",
     stack:
       "React, Redux, Webpack, SCSS, Jest, Typescript, Node.js, Express.js, Nest.js",
     description:
-      ["Сервис YandexTV предлагает бесплатный доступа как к расписанию телепрограмм различных телеканалов, так и возможность просмотра эпизодов прошедших передач.",
-       "На YandexTV можно найти информацию о расписании телеканалов кабельного, спутникового и цифрового телевидения. Расписание, анонсы, подробное описание телепередач с фото- и видеоматериалами предоставляют партнеры Яндекса."],
-    processDescription: ["Наша команда отвечала за перезапуск новой версии YandexTV. Были разработаны несколько версий продукта: настольная, для мобильных устройств и планшетов, для телевизиоров.", 
-    "Мы успешно применили наши компетенции в разработке бэкенда, архитектуре баз данных и фронтенда. Кроме того, был разработан бэк-офис для взаимодействия с поставщиками данных со всего мира.",
-    "В результате это позволило привлечь на сервис более 10,000,000 посетителей в сутки, предоставлять функционал, не имеющий аналогов в Восточной Европе и странах СНГ, и продавать рекламу с просмотров."]
+      ["The YandexTV service offers free access both to the schedules of various TV channels and the ability to watch episodes of past broadcasts.",
+       "Users can find information about the schedules of cable, satellite, and digital television channels on YandexTV. The schedules, announcements, and detailed descriptions of TV shows with photo and video materials are provided by Yandex's partners."],
+    processDescription: ["Our team was responsible for the relaunch of the new version of YandexTV. Several versions of the product were developed: desktop, mobile, and tablet versions, as well as a version for TV.", 
+    "We successfully applied our expertise in backend development, database architecture, and frontend design. Additionally, we developed a backend office for interaction with data providers from all over the world.",
+    "As a result, it has allowed us to attract more than 10,000,000 daily visitors to the service, provide functionality that has no analogues in Eastern Europe and the CIS countries, and sell advertising based on views."]
   },
   youdo: {
     name: "you-do",
@@ -119,22 +119,23 @@ export const projects = {
     title: "Front-End, Back-End development and support for the website YouDo",
     url: "youdo.com",
     address: "Moscow, Russia",
-    header: "Website maintenance of YouDo",
+    header: "Front-End, Back-End development and support for the project YouDo",
     stack:
       "Backbone.js, SCSS, UI, UX, Interactive design",
     description:
-      ["Сервис Юду позволяет найти исполнителей для любой задачи. Любой человек может зайти на сервис и описать свою проблему или задачу. Вы удивитесь как много людей готовы откликнуться и помочь с решением!"],
-    processDescription: ["Большая часть нашей команды занимались развитием проекта в период с 2011 до 2015 года — от момента основания сервиса YouDo до времени его расцвета.", 
-    "Мы занимались очень разными техническими и творческими задачами от написания фронтенда и бэкэнда проекта до оформления всевозможных рассылок. Кроме этого, разрабатывали концепцию и дизайн. На сегодняшний день YouDo является одним из крупнейших сервисов по предоставлению частных услуг в мире."]
+      ["The service YouDo allows finding performers for any task. Anyone can go to the service and describe their problem or task. You will be surprised how many people are willing to respond and help with the solution!"],
+    processDescription: ["A large part of our team was involved in the development of the project from 2011 to 2015 - from the moment of the founding of the YouDo service until its peak.", 
+    "We worked on a variety of technical and creative tasks, from developing the front-end and back-end of the project to designing various mailings. In addition, we developed the concept and design. Today, YouDo is one of the largest services for providing private services in the world."]
   },
 };
-
 
 export const list = [
   "caveat",
   "veneer",
-  "masterdelivery",
+  "master_delivery",
   "kinopoisk",
-  "yandextv",
+  "yandex_tv",
   "youdo",
 ];
+
+

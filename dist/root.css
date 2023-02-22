@@ -11,7 +11,6 @@ body{
   padding: 9.8vh 0 0;
   overflow-x: hidden !important;
 }
-
 header,
 .brand,
 .experience,
@@ -22,7 +21,6 @@ header,
   flex-direction: column;
   align-items: center;
 }
-
 .logo img {
   width: 26.3vw;
 }
@@ -75,6 +73,7 @@ h2 {
   position: relative;
   cursor: pointer;
 }
+
 .case-study-thumbnail img:last-child {
   width: 100%;
   height: auto;
@@ -101,20 +100,22 @@ h2 {
 .case-study-thumbnail:before {
   content: "";
   position: absolute;
-  display: block;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  transition: ease-out 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .case-study-thumbnail:hover::before {
   opacity: 0.5;
-  transition: all 0.5s ease-in;
+  
 }
 .case-study-thumbnail img:hover {
   opacity: 0;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
 }
+
 #blue:before {
   background-color: #4a5d9f;
 }
@@ -264,11 +265,6 @@ footer img {
 #email_jobs:link {
   color: black;
 }
-/* #email:hover,
-#email_jobs:hover {
-  color: #d90707;
-  cursor: pointer;
-} */
 
 /* IPad Mini*/
 @media only screen and (max-width: 994px) {
@@ -497,37 +493,22 @@ footer img {
     padding-bottom: 3.75rem;
     justify-content: center;
   }
-@media (pointer: fine) {
-  .case-study-thumbnail:hover::before {
-    opacity: 0.9;
-  }
-  .case-study-thumbnail img:hover {
-    opacity: 1;
-    transition: none;
-  }
-  .description:hover {
-    color: inherit;
-  }
-  a:hover {
-    color: #3799e0;
-  }
-}
-  
-  /*
-  @media (hover: hover) {
+
+  @media (max-width: 768px) {
     .case-study-thumbnail:hover::before {
       opacity: 0.9;
+      
     }
     .case-study-thumbnail img:hover {
       opacity: 1;
       transition: none;
     }
-    .description:hover {
+    .description:hover{
       color: inherit;
+      cursor: auto;
     }
     a:hover {
       color: #3799e0;
     }
   }
 }
-*/
