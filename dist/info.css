@@ -44,6 +44,7 @@ p {
 }
 .support p:last-child {
   padding-bottom: 1rem;
+
 }
 .screen {
   max-width: 100%;
@@ -87,9 +88,11 @@ p {
 }
 
 @media only screen and (max-width: 580px) {
-  .process,
-  h1 {
+  .process {
     padding: 0 2.1rem;
+  }
+  .brand p {
+    padding-bottom: 2.6rem;
   }
   .text {
     padding: 0;
@@ -101,7 +104,11 @@ p {
   h1 {
     font-size: 1.6rem;
     line-height: 2.2rem;
+    padding: 0;
     padding-bottom: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
   p,
   .stack_info {
