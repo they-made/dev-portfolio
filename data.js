@@ -121,7 +121,7 @@ export const projects = {
     address: "Moscow, Russia",
     header: "Front-End, Back-End development and support for the project YouDo",
     stack:
-      "Backbone.js, SCSS, UI, UX, Interactive design",
+      "Backbone.js, SCSS, UI and UX design, Interactive design",
     description:
       ["The service YouDo allows finding performers for any task. Anyone can go to the service and describe their problem or task. You will be surprised how many people are willing to respond and help with the solution!"],
     processDescription: ["A large part of our team was involved in the development of the project from 2011 to 2015 - from the moment of the founding of the YouDo service until its peak.", 

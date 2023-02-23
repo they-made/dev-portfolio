@@ -47,19 +47,13 @@ header,
   margin: 0;
 }
 h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: "Aleo", serif;
   font-weight: 700;
   font-size: 2.6rem;
   margin-top: 6.2rem;
   margin-bottom: 2.5rem;
 }
-.contacts h2 {
-  margin-top: 8.7rem;
-  margin-bottom: 2.8rem;
-}
+
 .case-study p {
   margin: 0.5rem 0;
 }
@@ -109,11 +103,14 @@ h2 {
 }
 .case-study-thumbnail:hover::before {
   opacity: 0.5;
-  
 }
 .case-study-thumbnail img:hover {
   opacity: 0;
   transition: all 0.5s ease-in-out;
+}
+.case-study-thumbnail img:not(:hover) {
+  opacity: 1;
+  transition: all 0.5s ease-in-out 0.1s; 
 }
 
 #blue:before {
@@ -198,17 +195,31 @@ a {
   font-family: "Inter", sans-serif;
   background-color: #f2f1e1;
   padding: 5rem;
-  margin: 0 21vw;
+  margin: 0 80px;
+  max-width: 1024px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.contacts h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8.7rem;
+  margin-bottom: 2.8rem;
 }
 .clients_wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
   column-gap: 3.1rem;
   row-gap: 2rem;
+  max-width: 52em;
 }
 .contacts h2 {
   margin: 0 0 2rem;
+ 
 }
 .logo_img {
   max-width: 100%;
@@ -321,14 +332,14 @@ footer img {
     line-height: 1.65rem;
   }
   .contacts {
-    width: 90vw;
-    padding: 3.1rem;
-    margin: 0 3vw;
+    padding: 3rem;
+    margin: 0;
   }
   .clients_wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.2rem;
+    /* max-width: 100%; */
   }
   .contacts img {
     width: 22vw;

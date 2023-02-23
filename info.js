@@ -32,7 +32,7 @@ function createProjectHTML(project) {
     .join("");
  
   return `
-    <section class="support">
+    <section class="support"> 
     <h1>${project.header}</h1>
       <div class="stack_info">
       <strong>Stack:</strong>
@@ -43,7 +43,7 @@ function createProjectHTML(project) {
       <img class="screen" src="${project.images.large}" alt="${project.name}"/>
     </section>
     <section class="process">
-      <h2>What we have done</h2>
+      <h2>Work Highlights</h2>
       ${processDescriptionElements}
     </section>
   `;
