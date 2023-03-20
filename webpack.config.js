@@ -11,9 +11,9 @@ module.exports = {
       rewrites: [{ from: /info\/?.*/, to: "/info.html" }],
     },
   },
-  entry: { index: "./index.js", info: "./info.js", },
+  entry: { index: "./src/pages/main/index.js", info: "./src/pages/info/info.js", },
   output: {
-    filename: "[name].js",
+    filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist",),
     // publicPath: "dist" //Do we need public path here?
   },
@@ -26,7 +26,6 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [ '@babel/env' ],
-            plugins: [ '@babel/plugin-proposal-class-properties' ]
           }
         }
       }
