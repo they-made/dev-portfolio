@@ -1,5 +1,6 @@
-"use strict";
+
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: "development",
   devServer: {
@@ -13,30 +14,25 @@ module.exports = {
   entry: { index: "./index.js", info: "./info.js", },
   output: {
     filename: "[name].js",
-    // path: path + "/dist",
     path: path.resolve(__dirname, "dist",),
+    // publicPath: "dist" //Do we need public path here?
   },
-  // resolve: {
-  //   extensions: [".js", ".jsx", ".ts", ".tsx"],
-  // },
-
-  // devServer: {
-  //   allowedHosts: [
-  //     'host.com',
-  //     'subdomain.host.com',
-  //     'subdomain2.host.com',
-  //     'host2.com',
-  //   ],
-  // },
-  // historyApiFallback: true
-
-  // watch: true,
-  // html loaders test
-  // test: /\.html$/,
-  // use: ["html-loader"],
-  // https: true,
-  // proxy: {
-  //   "/api": "http://localhost:8081/",
-  // },
-  // server: "https",
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [ '@babel/env' ],
+            plugins: [ '@babel/plugin-proposal-class-properties' ]
+          }
+        }
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin()
+  ]
 };

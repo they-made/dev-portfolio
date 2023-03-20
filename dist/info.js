@@ -20,13 +20,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
+/***/ "./info.js":
+/*!*****************!*\
+  !*** ./info.js ***!
+  \*****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data */ \"./data.js\");\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  return init(_data__WEBPACK_IMPORTED_MODULE_0__.projects, _data__WEBPACK_IMPORTED_MODULE_0__.list);\n});\nfunction init(projects, list) {\n  var projectListWrapper = document.getElementById(\"project-list\");\n  var projectListHTML = prepareProjectList(projects, list);\n  console.log(\"initcall\");\n  projectListWrapper.insertAdjacentHTML(\"afterbegin\", projectListHTML);\n}\nfunction prepareProjectList(projects, list) {\n  return list.reduce(function (accum, projectName) {\n    var project = projects[projectName];\n    var html = createProjectHTML(project);\n    return accum + html;\n  }, \"\");\n}\nfunction createProjectHTML(project) {\n  return \"\\n        <div class=\\\"case-study\\\">\\n          <a\\n            href=\\\"\".concat(project.href, \"\\\"\\n            class=\\\"case-study-thumbnail\\\"\\n            id=\\\"\").concat(project.color, \"\\\"\\n          >\\n            <img\\n              class=\\\"case-study-logo\\\"\\n              src=\\\"\").concat(project.logo, \"\\\"\\n              alt=\\\"\").concat(project.name, \" Logo\\\"\\n            />\\n            <img \\n              src=\\\"\").concat(project.images.large, \"\\\"\\n              alt=\\\"\").concat(project.name, \"\\\"\\n            />\\n          </a>\\n          <div>\\n            <p class=\\\"description\\\">\\n              \").concat(project.title, \"\\n            </p>\\n            <p class=\\\"location\\\"><a href=\\\"#\\\">\").concat(project.url, \"</a> \").concat(project.address, \"</p>\\n          </div>\\n        </div>\\n    \");\n}\n\n//# sourceURL=webpack://@kimdila/practice/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data */ \"./data.js\");\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  var path = window.location.pathname;\n  var projectName = path.split(\"/\").pop().replace(/-/g, '_');\n  init(_data__WEBPACK_IMPORTED_MODULE_0__.projects, _data__WEBPACK_IMPORTED_MODULE_0__.list, projectName);\n});\nfunction init(projects, list, projectName) {\n  var projectContentWrapper = document.getElementById(\"project-content\");\n  var projectHTML = prepareProjectList(projects, projectName);\n  console.log(\"initcall\");\n  projectContentWrapper.insertAdjacentHTML(\"afterbegin\", projectHTML);\n}\nfunction prepareProjectList(projects, projectName) {\n  var project = projects[projectName];\n  var html = createProjectHTML(project);\n  return html;\n}\nfunction createProjectHTML(project) {\n  var descriptionElements = project.description.map(function (value) {\n    return \"<p class=\\\"text\\\">\".concat(value, \"</p>\");\n  }).join(\"\");\n  var processDescriptionElements = project.processDescription.map(function (value) {\n    return \"<p>\".concat(value, \"</p>\");\n  }).join(\"\");\n  return \"\\n    <section class=\\\"support\\\"> \\n    <h1>\".concat(project.header, \"</h1>\\n      <div class=\\\"stack_info\\\">\\n      <strong>Stack:</strong>\\n      \").concat(project.stack, \"</div>\\n      \").concat(descriptionElements, \"\\n    </section>\\n    <section class=\\\"screen\\\">\\n      <img class=\\\"screen\\\" src=\\\"\").concat(project.images.large, \"\\\" alt=\\\"\").concat(project.name, \"\\\"/>\\n    </section>\\n    <section class=\\\"process\\\">\\n      <h2>Work Highlights</h2>\\n      \").concat(processDescriptionElements, \"\\n    </section>\\n  \");\n}\nconsole.log(path);\n\n//# sourceURL=webpack://@kimdila/practice/./info.js?");
 
 /***/ })
 
@@ -90,7 +90,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dat
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./info.js");
 /******/ 	
 /******/ })()
 ;
