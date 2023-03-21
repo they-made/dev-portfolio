@@ -1,4 +1,5 @@
 import 'src/pages/root.css';
+import './main.css';
 
 import {
     projects,
@@ -42,10 +43,23 @@ function createProjectHTML(project) {
             />
           </a>
           <div>
-            <p class="description">
+            <a
+              class="description"
+              href="${project.href}"
+            >
               ${project.title}
+            </a>
+            <p class="location">
+              <a
+                href="https://${project.url}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ${project.url}
+              </a>
+              &nbsp;
+              ${project.address}
             </p>
-            <p class="location"><a href="#">${project.url}</a> ${project.address}</p>
           </div>
         </div>
     `;

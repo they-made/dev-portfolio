@@ -26,7 +26,7 @@ module.exports = {
         },
     },
     entry: {
-        main: './src/pages/main/index.js',
+        main: './src/pages/main/main.js',
         info: './src/pages/info/info.js',
     },
     output: {
