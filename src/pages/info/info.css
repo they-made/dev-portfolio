@@ -55,6 +55,13 @@ h2 {
 .email p {
     margin: 0;
 }
+.project-link {
+    color: #000;
+}
+.project-link:hover {
+    color: #d90707;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 994px) {
     .process,
@@ -74,13 +81,11 @@ h2 {
         margin: 0 3rem;
         width: auto;
     }
-
     h1 {
         font-size: 2.1rem;
         line-height: 2.8rem;
         padding-bottom: 1rem;
     }
-
     .screen img {
         padding: 0 7.5vw;
     }
