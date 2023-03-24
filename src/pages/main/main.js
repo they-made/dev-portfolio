@@ -38,7 +38,7 @@ function createProjectHTML(project) {
               alt="${project.name} Logo"
             />
             <img 
-              src="${project.images.large}"
+              src="${project.images.small}"
               alt="${project.name}"
             />
           </a>

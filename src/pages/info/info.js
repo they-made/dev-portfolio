@@ -37,7 +37,14 @@ function createProjectHTML(project) {
             ${descriptionElements}
         </section>
         <section class="screen">
-            <img class="screen" src="${project.images.large}" alt="${project.name}"/>
+            <picture>
+                <source srcset="${project.images.large}" media="(min-width: 580px)"/>
+                <img
+                    class="project-preview"
+                    src="${project.images.small}"
+                    alt="${project.name}"
+                />
+            </picture>
         </section>
         <section class="process">
             <h2>Work Highlights</h2>

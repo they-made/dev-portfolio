@@ -43,6 +43,9 @@ h2 {
 .screen {
     max-width: 100%;
 }
+.project-preview {
+    width: 100%;
+}
 .process p {
     margin: 0;
 }
