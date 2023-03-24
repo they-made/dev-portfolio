@@ -2,9 +2,10 @@ export const projects = {
     caveat: {
         name: 'Caveat',
         images: {
-            large: '/images/6_Hellocaveat.png',
+            large: '/images/projects/hellocaveat/preview_large.png',
+            small: '/images/projects/hellocaveat/preview_small.png',
         },
-        logo: '/images/Caveat_White.svg',
+        logo: '/images/projects/hellocaveat/preview_logo.svg',
         href: '/info/caveat',
         color: 'blue',
         title:
@@ -26,9 +27,10 @@ export const projects = {
     veneer: {
         name: 'Veneer',
         images: {
-            large: '/images/5_Veneer.png',
+            large: '/images/projects/veneer/preview_large.png',
+            small: '/images/projects/veneer/preview_small.png',
         },
-        logo: '/images/Veneer_White.svg',
+        logo: '/images/projects/veneer/preview_logo.svg',
         href: '/info/veneer',
         color: 'pink',
         title:
@@ -50,9 +52,10 @@ export const projects = {
     'master-delivery': {
         name: 'MasterDelivery',
         images: {
-            large: '/images/4_MasterDelivery.png',
+            large: '/images/projects/masterdelivery/preview_large.png',
+            small: '/images/projects/masterdelivery/preview_small.png',
         },
-        logo: '/images/Master_deliver_white.svg',
+        logo: '/images/projects/masterdelivery/preview_logo.svg',
         href: '/info/master-delivery',
         color: 'orange',
         title:
@@ -75,9 +78,10 @@ export const projects = {
     kinopoisk: {
         name: 'Kinopoisk',
         images: {
-            large: '/images/3_Kinopoisk.png',
+            large: '/images/projects/kinopoisk/preview_large.png',
+            small: '/images/projects/kinopoisk/preview_small.png',
         },
-        logo: '/images/Kinopoisk_white.svg',
+        logo: '/images/projects/kinopoisk/preview_logo.svg',
         href: '/info/kinopoisk',
         color: 'gradient',
         title: 'Front-End development and support for the website Kinopoisk',
@@ -100,9 +104,10 @@ export const projects = {
     'yandex-tv': {
         name: 'YandexTV',
         images: {
-            large: '/images/2_YandexTV.png',
+            large: '/images/projects/yandextv/preview_large.png',
+            small: '/images/projects/yandextv/preview_small.png',
         },
-        logo: '/images/YandexTV_white.svg',
+        logo: '/images/projects/yandextv/preview_logo.svg',
         href: '/info/yandex-tv',
         color: 'black',
         title:
@@ -125,9 +130,10 @@ export const projects = {
     youdo: {
         name: 'you-do',
         images: {
-            large: '/images/1_YouDo.png',
+            large: '/images/projects/youdo/preview_large.png',
+            small: '/images/projects/youdo/preview_small.png',
         },
-        logo: '/images/You_Do_white.svg',
+        logo: '/images/projects/youdo/preview_logo.svg',
         href: '/info/youdo',
         color: 'purple',
         title: 'Front-End, Back-End development and support for the website YouDo',
