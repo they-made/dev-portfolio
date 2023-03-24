@@ -11,9 +11,12 @@ View.bootstrap(() => init(projects));
 function init(projects) {
     const path = window.location.pathname;
     const projectName = path.split('/').at(-1);
+    const project = projects[projectName];
+
+    document.title = `${project.name} — ${project.header}`;
 
     const InfoView = new View('project-content');
-    const projectHTML = createProjectHTML(projects[projectName]);
+    const projectHTML = createProjectHTML(project);
 
     InfoView.render(projectHTML);
 }
