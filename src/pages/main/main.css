@@ -27,7 +27,6 @@
 .case-study-thumbnail img:last-child {
     width: 100%;
     height: auto;
-    transition: ease-out 0.5s;
 }
 .case-study-logo {
     width: 100%;
@@ -60,13 +59,13 @@
 .case-study-thumbnail:hover::before {
     opacity: 0.5;
 }
-.case-study-thumbnail img:hover {
-    opacity: 0;
+.case-study-logo {
+    opacity: 1;
     transition: all 0.5s ease-in-out;
 }
-.case-study-thumbnail img:not(:hover) {
-    opacity: 1;
-    transition: all 0.5s ease-in-out 0.1s;
+.case-study-thumbnail:hover > .case-study-logo {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 #blue:before {
