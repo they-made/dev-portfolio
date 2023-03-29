@@ -280,12 +280,16 @@ a {
     }
 
     @media (max-width: 768px) {
-        .case-study-thumbnail:hover::before {
-            opacity: 0.9;
-        }
-        .case-study-thumbnail img:hover {
+        .case-study-logo {
             opacity: 1;
             transition: none;
+        }
+        .case-study-thumbnail:hover > .case-study-logo {
+            opacity: 1;
+            transition: none;
+        }
+        .case-study-thumbnail:hover::before {
+            opacity: 0.9;
         }
         .description:hover{
             color: inherit;
