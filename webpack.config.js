@@ -64,7 +64,7 @@ module.exports = {
             chunks: ['main']
         }),
         new HtmlWebpackPlugin({
-            filename: 'info.html',
+            filename: 'info/index.html',
             template: 'src/templates/info.html',
             publicPath: '/',
             chunks: ['info']
